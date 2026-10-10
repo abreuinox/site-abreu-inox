@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #09090a;
+  --color-coal: #111113;
+  --color-graphite: #1a1a1d;
+  --color-line: #2a2a2e;
+  --color-steel: #c9ccd1;
+  --color-steel-dim: #8d9198;
+  --color-paper: #f1f2f3;
+  --color-whatsapp: #1faa59;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-archivo), var(--font-inter), ui-sans-serif, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-paper);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  /* Texto com acabamento de aço escovado, usado nos títulos. */
+  .text-steel {
+    background-image: linear-gradient(180deg, #ffffff 0%, #d7dadd 45%, #8f949b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Superfície de aço escovado para o botão principal. */
+  .surface-steel {
+    background-image: linear-gradient(180deg, #ffffff 0%, #dfe2e5 48%, #b9bdc3 100%);
+    color: var(--color-ink);
+  }
+
+  .surface-steel:hover {
+    background-image: linear-gradient(180deg, #ffffff 0%, #eceef0 48%, #cdd1d6 100%);
+  }
+
+  /* Linhas finas que lembram tubos de inox, usadas como fundo do hero. */
+  .bg-rails {
+    background-image:
+      radial-gradient(ellipse 80% 60% at 70% 0%, rgb(255 255 255 / 0.09), transparent 70%),
+      repeating-linear-gradient(
+        115deg,
+        transparent 0 46px,
+        rgb(255 255 255 / 0.035) 46px 47px
+      );
+  }
+}

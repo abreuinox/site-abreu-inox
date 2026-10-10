@@ -1,0 +1,108 @@
+[
+  {
+    "id": "escada-helicoidal-guarda-corpo",
+    "title": "Corrimão e guarda corpo em inox para escada helicoidal",
+    "category": "Escadas",
+    "description": "Corrimão curvo e guarda corpo em aço inox acompanhando todo o desenho da escada helicoidal, com fechamento circular no pavimento superior.",
+    "image": {
+      "src": "/images/projects/escada-helicoidal-01.jpg",
+      "alt": "Guarda corpo circular em aço inox ao redor da abertura de uma escada helicoidal branca, visto do pavimento superior"
+    },
+    "gallery": [
+      {
+        "src": "/images/projects/escada-helicoidal-02.jpg",
+        "alt": "Detalhe da curva do corrimão em aço inox escovado na chegada da escada helicoidal"
+      },
+      {
+        "src": "/images/projects/escada-helicoidal-03.jpg",
+        "alt": "Início do corrimão em aço inox no primeiro degrau da escada helicoidal, com montantes fixados ao piso"
+      }
+    ],
+    "video": {
+      "src": "/videos/projects/escada-helicoidal.mp4",
+      "poster": "/images/projects/escada-helicoidal-video.jpg",
+      "label": "Vídeo do corrimão e guarda corpo em inox da escada helicoidal"
+    },
+    "featured": true
+  },
+  {
+    "id": "escada-curva-corrimao",
+    "title": "Corrimão e guarda corpo em inox para escada curva",
+    "category": "Escadas",
+    "description": "Corrimão em aço inox dos dois lados da escada curva, com montantes e longarinas que acompanham a subida dos degraus.",
+    "image": {
+      "src": "/images/projects/escada-curva-01.jpg",
+      "alt": "Escada curva de degraus claros com corrimão e guarda corpo em aço inox, diante de uma fachada de vidro"
+    }
+  },
+  {
+    "id": "guarda-corpo-vidro-hall",
+    "title": "Guarda corpo em inox com vidro em hall de edifício",
+    "category": "Guarda corpos",
+    "description": "Guarda corpo em aço inox com fechamento em vidro para organizar a circulação junto às catracas e aos elevadores.",
+    "image": {
+      "src": "/images/projects/guarda-corpo-vidro-hall-01.jpg",
+      "alt": "Guarda corpo em aço inox com painéis de vidro em hall de edifício, ao lado das catracas de acesso"
+    },
+    "gallery": [
+      {
+        "src": "/images/projects/guarda-corpo-vidro-hall-02.jpg",
+        "alt": "Trecho do guarda corpo em aço inox e vidro fixado ao piso de mármore do hall"
+      },
+      {
+        "src": "/images/projects/guarda-corpo-vidro-hall-03.jpg",
+        "alt": "Fechamento em aço inox e vidro entre a catraca e a parede do hall"
+      }
+    ]
+  },
+  {
+    "id": "guarda-corpo-tubo-quadrado",
+    "title": "Guarda corpo em inox com montantes quadrados",
+    "category": "Guarda corpos",
+    "description": "Guarda corpo em aço inox polido com montantes de tubo quadrado, longarinas horizontais e corrimão superior.",
+    "image": {
+      "src": "/images/projects/guarda-corpo-tubo-quadrado-01.jpg",
+      "alt": "Guarda corpo em aço inox polido com montantes quadrados e longarinas horizontais no topo de uma escada"
+    }
+  },
+  {
+    "id": "corrimao-arquibancada",
+    "title": "Corrimão duplo em inox para arquibancada",
+    "category": "Corrimões",
+    "description": "Corrimão duplo em aço inox instalado ao longo dos degraus de acesso de uma arquibancada.",
+    "image": {
+      "src": "/images/projects/corrimao-arquibancada-01.jpg",
+      "alt": "Corrimão duplo em aço inox na escada de acesso de uma arquibancada com assentos amarelos e azuis"
+    }
+  },
+  {
+    "id": "corrimao-escada-interna",
+    "title": "Corrimão em inox para escada interna",
+    "category": "Corrimões",
+    "description": "Corrimão em aço inox escovado com acabamento curvo na chegada da escada.",
+    "image": {
+      "src": "/images/projects/corrimao-escada-interna-01.jpg",
+      "alt": "Corrimão em aço inox escovado com extremidade curva em escada interna de piso escuro"
+    }
+  },
+  {
+    "id": "corrimao-piscina",
+    "title": "Corrimão em inox para acesso à piscina",
+    "category": "Piscinas",
+    "description": "Corrimão em aço inox com dupla altura, fixado na borda para apoiar a entrada e a saída da piscina.",
+    "image": {
+      "src": "/images/projects/corrimao-piscina-01.jpg",
+      "alt": "Corrimão em aço inox de dupla altura fixado nos degraus de entrada de uma piscina"
+    }
+  },
+  {
+    "id": "beliche-inox",
+    "title": "Beliche em aço inox sob medida",
+    "category": "Móveis",
+    "description": "Beliche com estrutura, escada e proteção lateral em aço inox, fabricado sob medida para o quarto.",
+    "image": {
+      "src": "/images/projects/beliche-inox-01.jpg",
+      "alt": "Beliche com estrutura e escada em aço inox polido em um quarto infantil"
+    }
+  }
+]

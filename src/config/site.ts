@@ -14,7 +14,7 @@ export const site = {
   seo: {
     title: "Corrimão e Guarda Corpo de Inox em Brasília | Abreu Inox",
     description:
-      "Corrimões, guarda corpos, escadas, móveis e estruturas em aço inox sob medida. Atendemos DF e Goiás, com nota fiscal e faturamento. Peça seu orçamento.",
+      "Corrimãos, guarda corpos, escadas, móveis e estruturas em aço inox sob medida. Atendemos DF e Goiás, com nota fiscal e faturamento. Peça seu orçamento.",
   },
 
   whatsapp: {

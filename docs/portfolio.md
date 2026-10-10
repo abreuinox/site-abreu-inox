@@ -42,7 +42,7 @@ projetos da Abreu Inox.
 
 - `id` é único e não muda depois de publicado.
 - `category` agrupa os projetos no filtro do portfólio; use sempre a mesma
-  grafia para a mesma categoria (ex.: "Corrimões", "Guarda corpos", "Escadas").
+  grafia para a mesma categoria (ex.: "Corrimãos", "Guarda corpos", "Escadas").
 - `alt` descreve a foto especificamente; não repita o título.
 - `gallery`, `video`, `location` e `featured` são opcionais.
 - Vídeos ficam em `public/videos/projects/`, em MP4 (H.264), sem áudio e de

@@ -19,10 +19,10 @@ export function Hero() {
             {site.tagline}
           </p>
           <h1 className="text-steel mt-6 font-display text-4xl leading-[1.05] font-extrabold tracking-tight text-balance sm:text-6xl">
-            Corrimões, guarda corpos e soluções em aço inox sob medida.
+            Corrimãos, guarda corpos e soluções em aço inox sob medida.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-steel">
-            Fabricamos e instalamos corrimões, guarda corpos, escadas, móveis e
+            Fabricamos e instalamos corrimãos, guarda corpos, escadas, móveis e
             estruturas personalizadas em aço inox. Atendemos o Distrito Federal
             e Goiás, com nota fiscal e faturamento.
           </p>

@@ -7,9 +7,9 @@ export type Service = {
 export const services: Service[] = [
   {
     id: "corrimoes",
-    title: "Corrimões",
+    title: "Corrimãos",
     description:
-      "Corrimões em aço inox sob medida para escadas, rampas e áreas de circulação.",
+      "Corrimãos em aço inox sob medida para escadas, rampas e áreas de circulação.",
   },
   {
     id: "guarda-corpos",

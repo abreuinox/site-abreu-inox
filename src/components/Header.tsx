@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { site } from "@/config/site";
+import { whatsappUrl } from "@/lib/whatsapp";
+import { MobileMenu } from "./MobileMenu";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 const links = [
@@ -13,8 +15,12 @@ const links = [
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-ink/85 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:px-8">
-        <a href="#topo" className="flex items-center gap-3" aria-label={`${site.shortName}, início`}>
+      <div className="relative mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-8">
+        <a
+          href="#topo"
+          className="flex shrink-0 items-center gap-2.5 sm:gap-3"
+          aria-label={`${site.shortName}, início`}
+        >
           <Image
             src="/images/brand/abreu-inox-logo.jpg"
             alt=""
@@ -23,7 +29,7 @@ export function Header() {
             priority
             className="size-10 rounded-full"
           />
-          <span className="font-display text-base font-bold tracking-[0.18em]">
+          <span className="hidden font-display text-sm font-bold tracking-[0.14em] whitespace-nowrap min-[375px]:inline sm:text-base sm:tracking-[0.18em]">
             {site.name}
           </span>
         </a>
@@ -32,16 +38,24 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-steel-dim transition-colors hover:text-paper"
+              className="py-3 text-sm text-steel-dim transition-colors hover:text-paper"
             >
               {link.label}
             </a>
           ))}
         </nav>
-        <WhatsAppButton size="md">
-          <span className="hidden sm:inline">Pedir orçamento</span>
-          <span className="sm:hidden">Orçamento</span>
-        </WhatsAppButton>
+        <div className="flex items-center gap-2">
+          <WhatsAppButton size="md" className="whitespace-nowrap">
+            <span className="hidden sm:inline">Pedir orçamento</span>
+            <span className="sm:hidden">Orçamento</span>
+          </WhatsAppButton>
+          <MobileMenu
+            links={links}
+            quoteUrl={whatsappUrl()}
+            instagramUrl={site.instagram.url}
+            instagramHandle={site.instagram.handle}
+          />
+        </div>
       </div>
     </header>
   );

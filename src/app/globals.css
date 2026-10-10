@@ -18,6 +18,17 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
+    /* Celular: sem texto inflado ao girar a tela e sem zoom por toque duplo. */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    touch-action: manipulation;
+  }
+
+  html,
+  body {
+    /* Nada pode alargar a página e criar rolagem lateral. */
+    max-width: 100%;
+    overflow-x: clip;
   }
 
   body {

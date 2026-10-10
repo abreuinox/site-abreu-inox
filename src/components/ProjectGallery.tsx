@@ -17,6 +17,8 @@ type Props = {
 };
 
 const ALL = "Todos";
+/** Quantos projetos a grade mostra antes do botão "Ver todos". */
+const PAGE_SIZE = 9;
 
 function mediaLabel(project: Project) {
   const photoCount = (project.gallery?.length ?? 0) + 1;
@@ -26,6 +28,7 @@ function mediaLabel(project: Project) {
 
 export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
   const [category, setCategory] = useState(ALL);
+  const [expanded, setExpanded] = useState(false);
   const [openId, setOpenId] = useState<string | null>(null);
   const [photoIndex, setPhotoIndex] = useState(0);
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -34,7 +37,8 @@ export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
     category === ALL ? projects : projects.filter((p) => p.category === category);
   // O destaque só aparece na visão geral; com filtro, tudo entra na grade.
   const featured = category === ALL ? projects.find((p) => p.featured) : undefined;
-  const grid = visible.filter((p) => p.id !== featured?.id);
+  const rest = visible.filter((p) => p.id !== featured?.id);
+  const grid = expanded ? rest : rest.slice(0, PAGE_SIZE);
   const open = projects.find((p) => p.id === openId) ?? null;
   const photos = open ? [open.image, ...(open.gallery ?? [])] : [];
   // O vídeo, quando existe, entra como último item da galeria.
@@ -73,8 +77,11 @@ export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
               key={name}
               type="button"
               aria-pressed={category === name}
-              onClick={() => setCategory(name)}
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
+              onClick={() => {
+                setCategory(name);
+                setExpanded(false);
+              }}
+              className={`min-h-11 rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
                 category === name
                   ? "border-paper bg-paper text-ink"
                   : "border-white/20 text-steel hover:border-white/50"
@@ -154,6 +161,18 @@ export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
         ))}
       </ul>
 
+      {rest.length > grid.length ? (
+        <div className="mt-4 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setExpanded(true)}
+            className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/25 px-7 py-3.5 font-semibold transition-colors hover:border-white/60 hover:bg-white/5"
+          >
+            Ver todos os {visible.length} projetos
+          </button>
+        </div>
+      ) : null}
+
       <dialog
         ref={dialogRef}
         onClose={() => setOpenId(null)}
@@ -225,7 +244,7 @@ export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
                   type="button"
                   onClick={() => setOpenId(null)}
                   aria-label="Fechar projeto"
-                  className="grid size-10 shrink-0 place-items-center rounded-full border border-white/20 hover:border-white/60"
+                  className="grid size-11 shrink-0 place-items-center rounded-full border border-white/20 hover:border-white/60"
                 >
                   <CloseIcon className="size-4" />
                 </button>

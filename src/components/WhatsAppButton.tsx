@@ -17,7 +17,7 @@ const variants = {
 };
 
 const sizes = {
-  md: "px-5 py-3 text-sm",
+  md: "min-h-11 px-4 py-2.5 text-sm sm:px-5",
   lg: "px-7 py-4 text-base",
 };
 
@@ -34,7 +34,7 @@ export function WhatsAppButton({
       href={whatsappUrl(audience)}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center justify-center gap-2.5 rounded-full font-semibold transition-colors ${variants[variant]} ${sizes[size]} ${className}`}
+      className={`inline-flex items-center justify-center gap-2.5 rounded-full text-center font-semibold transition-colors ${variants[variant]} ${sizes[size]} ${className}`}
     >
       <WhatsAppIcon className="size-5 shrink-0" />
       {children}

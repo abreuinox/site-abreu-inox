@@ -44,6 +44,12 @@ export const projects: Project[] = [...(catalog as Project[])].sort(
   (a, b) => Number(b.featured ?? false) - Number(a.featured ?? false),
 );
 
-export const projectCategories: string[] = [
-  ...new Set(projects.map((project) => project.category)),
-];
+const categoryCounts = new Map<string, number>();
+for (const { category } of projects) {
+  categoryCounts.set(category, (categoryCounts.get(category) ?? 0) + 1);
+}
+
+/** Categorias do filtro, das que têm mais projetos para as que têm menos. */
+export const projectCategories: string[] = [...categoryCounts.keys()].sort(
+  (a, b) => categoryCounts.get(b)! - categoryCounts.get(a)!,
+);

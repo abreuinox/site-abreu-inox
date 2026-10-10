@@ -26,13 +26,13 @@ export function Footer() {
           <p className="text-xs font-semibold tracking-[0.18em] text-steel-dim uppercase">
             Contato
           </p>
-          <ul className="mt-4 space-y-3 text-sm">
+          <ul className="mt-2 text-sm">
             <li>
               <a
                 href={whatsappUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 hover:underline"
+                className="inline-flex min-h-11 items-center gap-2.5 hover:underline"
               >
                 <WhatsAppIcon className="size-4" />
                 WhatsApp {site.whatsapp.display}
@@ -43,7 +43,7 @@ export function Footer() {
                 href={site.instagram.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 hover:underline"
+                className="inline-flex min-h-11 items-center gap-2.5 hover:underline"
               >
                 <InstagramIcon className="size-4" />
                 Instagram {site.instagram.handle}
@@ -64,7 +64,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-line">
-        <p className="mx-auto max-w-6xl px-5 py-6 text-xs text-steel-dim sm:px-8">
+        <p className="mx-auto max-w-6xl py-6 pr-24 pl-5 text-xs text-steel-dim sm:px-8">
           © {new Date().getFullYear()} {site.shortName}. Todos os direitos reservados.
         </p>
       </div>

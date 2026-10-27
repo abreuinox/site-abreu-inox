@@ -20,8 +20,8 @@ export function Experience() {
     <Section
       id="experiencia"
       eyebrow="Sobre a Abreu Inox"
-      title="Mais de 15 anos de experiência"
-      intro="Há mais de 15 anos no mercado, a Abreu Inox desenvolve projetos e estruturas em aço inox sob medida: de corrimãos e guarda corpos a escadas, móveis e peças personalizadas."
+      title="Mais de 30 anos de experiência"
+      intro="Há mais de 30 anos no mercado, a Abreu Inox desenvolve projetos e estruturas em aço inox sob medida: de corrimãos e guarda corpos a escadas, móveis e peças personalizadas."
       className="bg-coal/40"
     >
       <ol className="grid gap-6 md:grid-cols-3">

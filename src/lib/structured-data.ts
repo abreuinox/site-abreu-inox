@@ -24,7 +24,6 @@ export function structuredData() {
         logo: `${site.url}/images/brand/abreu-inox-logo.jpg`,
         address: {
           "@type": "PostalAddress",
-          streetAddress: site.base.neighborhood,
           addressLocality: site.base.city,
           addressRegion: site.base.region,
           addressCountry: site.base.country,

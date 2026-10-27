@@ -30,9 +30,8 @@ export const site = {
   },
 
   base: {
-    label: "SH Sol Nascente, Sol Nascente/Pôr do Sol, Brasília, DF",
-    neighborhood: "SH Sol Nascente, Sol Nascente/Pôr do Sol",
-    city: "Brasília",
+    label: "Ceilândia-DF",
+    city: "Ceilândia",
     region: "DF",
     country: "BR",
   },
@@ -43,7 +42,7 @@ export const site = {
     states: ["Distrito Federal", "Goiás"],
   },
 
-  experience: "Mais de 15 anos de mercado",
+  experience: "Mais de 30 anos de mercado",
 } as const;
 
 /** Mensagens pré-preenchidas do WhatsApp, por perfil de quem pede o orçamento. */

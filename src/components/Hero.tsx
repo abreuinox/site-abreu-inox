@@ -4,7 +4,7 @@ import { ArrowIcon } from "./icons";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 const highlights = [
-  { value: "+15 anos", label: "de mercado" },
+  { value: "+30 anos", label: "de mercado" },
   { value: "DF e Goiás", label: "área de atendimento" },
   { value: "Nota fiscal", label: "e faturamento" },
   { value: "Sob medida", label: "para cada projeto" },

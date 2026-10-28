@@ -13,13 +13,13 @@ export const services: Service[] = [
   },
   {
     id: "guarda-corpos",
-    title: "Guarda corpos",
+    title: "Guarda-corpos",
     description:
-      "Guarda corpos em aço inox para sacadas, mezaninos, escadas e varandas.",
+      "Guarda-corpos em aço inox para sacadas, mezaninos, escadas e varandas.",
   },
   {
     id: "guarda-corpos-piscinas",
-    title: "Guarda corpos para piscinas",
+    title: "Guarda-corpos para piscinas",
     description:
       "Proteção em aço inox para o entorno de piscinas e áreas de lazer.",
   },

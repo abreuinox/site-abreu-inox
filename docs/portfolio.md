@@ -13,23 +13,23 @@ projetos da Abreu Inox.
 ```json
 {
   "id": "guarda-corpo-vidro-01",
-  "title": "Guarda corpo em inox com vidro",
-  "category": "Guarda corpos",
+  "title": "Guarda-corpo em inox com vidro",
+  "category": "Guarda-corpos",
   "description": "Descrição curta do que foi fabricado e instalado.",
   "image": {
     "src": "/images/projects/guarda-corpo-vidro-01.jpg",
-    "alt": "Guarda corpo em aço inox com vidro em escada interna"
+    "alt": "Guarda-corpo em aço inox com vidro em escada interna"
   },
   "gallery": [
     {
       "src": "/images/projects/guarda-corpo-vidro-02.jpg",
-      "alt": "Detalhe da fixação do guarda corpo em aço inox"
+      "alt": "Detalhe da fixação do guarda-corpo em aço inox"
     }
   ],
   "video": {
     "src": "/videos/projects/guarda-corpo-vidro.mp4",
     "poster": "/images/projects/guarda-corpo-vidro-capa.jpg",
-    "label": "Vídeo do guarda corpo em inox com vidro"
+    "label": "Vídeo do guarda-corpo em inox com vidro"
   },
   "location": "Brasília, DF",
   "featured": true
@@ -42,7 +42,7 @@ projetos da Abreu Inox.
 
 - `id` é único e não muda depois de publicado.
 - `category` agrupa os projetos no filtro do portfólio; use sempre a mesma
-  grafia para a mesma categoria (ex.: "Corrimãos", "Guarda corpos", "Escadas").
+  grafia para a mesma categoria (ex.: "Corrimãos", "Guarda-corpos", "Escadas").
 - `alt` descreve a foto especificamente; não repita o título.
 - `gallery`, `video`, `location` e `featured` são opcionais.
 - Vídeos ficam em `public/videos/projects/`, em MP4 (H.264), sem áudio e de

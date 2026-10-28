@@ -9,6 +9,7 @@ preparado para publicação na Vercel em `https://abreuinox.com`.
 npm install
 npm run dev        # http://localhost:3000
 npm run build      # valida o catálogo de projetos e gera o build de produção
+npm run check:seo -- http://localhost:3000   # com o site rodando: SEO técnico de todas as URLs
 ```
 
 ## Onde alterar cada coisa
@@ -16,11 +17,19 @@ npm run build      # valida o catálogo de projetos e gera o build de produção
 | O quê | Arquivo |
 | --- | --- |
 | Contato, domínio, SEO, mensagens do WhatsApp | `src/config/site.ts` |
+| Google Ads (ID da conta e rótulo da conversão) | `.env.local` / variáveis da Vercel — veja `.env.example` |
 | Lista de serviços | `src/data/services.ts` |
+| Páginas de soluções (`/solucoes/...`) | `src/data/solutions.ts` |
+| Conteúdos técnicos (`/conteudos/...`) | `src/data/articles.ts` |
+| Perguntas frequentes da home | `src/data/faq.ts` |
+| Menu principal | `src/config/navigation.ts` |
+| Metadata por página (title, canonical, Open Graph) | `src/lib/seo.ts` |
+| GA4 e eventos de conversão | `src/lib/analytics.ts`, `src/components/Analytics.tsx` |
 | Projetos do portfólio | `src/data/projects.json` (guia em `docs/portfolio.md`) |
 | Fotos e vídeos dos projetos | `public/images/projects/`, `public/videos/projects/` |
-| Dados estruturados (LocalBusiness) | `src/lib/structured-data.ts` |
-| Redirecionamento www e cabeçalhos | `next.config.ts` |
+| Dados estruturados (grafo JSON-LD) | `src/lib/structured-data.ts` |
+| Redirecionamentos (www, vercel.app) e cabeçalhos | `next.config.ts` |
+| Estratégia e documentação de SEO | `docs/seo/` |
 
 A pasta `IMG-ABREU-INOX/` guarda os arquivos originais e não é publicada
 (está no `.gitignore` e no `.vercelignore`).
@@ -34,8 +43,9 @@ localização ou nome de cliente sem confirmação.
 1. Registrar o domínio `abreuinox.com` (em 09/10/2026 o WHOIS não encontrava
    registro para ele).
 2. Criar o projeto na Vercel a partir desta pasta (`vercel` e depois
-   `vercel --prod`, ou importando o repositório Git). Framework: Next.js, sem
-   variáveis de ambiente.
+   `vercel --prod`, ou importando o repositório Git). Framework: Next.js.
+   Para campanhas do Google Ads, definir `NEXT_PUBLIC_GOOGLE_ADS_ID` e
+   `NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL` (veja `.env.example`).
 3. Em *Settings > Domains*, adicionar `abreuinox.com` (principal) e
    `www.abreuinox.com` redirecionando para `abreuinox.com`.
 4. No provedor do domínio, criar os registros DNS que a Vercel indicar

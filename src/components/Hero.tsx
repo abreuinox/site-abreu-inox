@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { site } from "@/config/site";
-import { ArrowIcon } from "./icons";
+import { ButtonLink } from "./ButtonLink";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 const highlights = [
-  { value: "+30 anos", label: "de mercado" },
+  { value: site.experienceShort, label: "anos de experiência" },
   { value: "DF e Goiás", label: "área de atendimento" },
   { value: "Nota fiscal", label: "e faturamento" },
   { value: "Sob medida", label: "para cada projeto" },
@@ -12,29 +12,26 @@ const highlights = [
 
 export function Hero() {
   return (
-    <section id="topo" className="bg-rails relative overflow-hidden">
+    <section id="topo" aria-labelledby="topo-titulo" className="bg-rails relative overflow-hidden">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pt-16 pb-14 sm:px-8 sm:pt-24 lg:grid-cols-[1.35fr_1fr]">
         <div>
           <p className="text-xs font-semibold tracking-[0.22em] text-steel-dim uppercase">
-            {site.tagline}
+            {site.experience} · Brasília e DF
           </p>
-          <h1 className="text-steel mt-6 font-display text-4xl leading-[1.05] font-extrabold tracking-tight text-balance sm:text-6xl">
-            Corrimãos, guarda corpos e soluções em aço inox sob medida.
+          <h1
+            id="topo-titulo"
+            className="text-steel mt-6 font-display text-4xl leading-[1.05] font-extrabold tracking-tight text-balance sm:text-6xl"
+          >
+            Soluções em aço inox sob medida, com mais de 30 anos de experiência
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-steel">
-            Fabricamos e instalamos corrimãos, guarda corpos, escadas, móveis e
-            estruturas personalizadas em aço inox. Atendemos o Distrito Federal
-            e Goiás, com nota fiscal e faturamento.
+            A Abreu Inox fabrica e instala corrimãos, guarda-corpos, acabamentos para escadas
+            helicoidais, móveis e peças em aço inox para empresas, órgãos públicos, condomínios
+            e residências no Distrito Federal e em Goiás, com nota fiscal e faturamento.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <WhatsAppButton>Solicitar orçamento</WhatsAppButton>
-            <a
-              href="#projetos"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-7 py-4 font-semibold transition-colors hover:border-white/60 hover:bg-white/5"
-            >
-              Ver projetos
-              <ArrowIcon className="size-4" />
-            </a>
+            <WhatsAppButton cta="hero">Solicitar orçamento</WhatsAppButton>
+            <ButtonLink href="/projetos/">Conhecer nossos projetos</ButtonLink>
           </div>
         </div>
         <figure className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-white/10">

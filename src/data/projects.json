@@ -1,17 +1,17 @@
 [
   {
     "id": "escada-helicoidal-guarda-corpo",
-    "title": "Corrimão e guarda corpo em inox para escada helicoidal",
+    "title": "Corrimão e guarda-corpo em inox para escada helicoidal",
     "category": "Escadas",
-    "description": "Corrimão curvo e guarda corpo em aço inox acompanhando todo o desenho da escada helicoidal, com fechamento circular no pavimento superior.",
+    "description": "Corrimão curvo e guarda-corpo em aço inox acompanhando todo o desenho da escada helicoidal, com fechamento circular no pavimento superior.",
     "image": {
       "src": "/images/projects/escada-helicoidal-01.jpg",
-      "alt": "Guarda corpo circular em aço inox ao redor da abertura de uma escada helicoidal branca, visto do pavimento superior"
+      "alt": "Guarda-corpo circular em aço inox ao redor da abertura de uma escada helicoidal branca, visto do pavimento superior"
     },
     "gallery": [
       {
         "src": "/images/projects/escada-helicoidal-04.jpg",
-        "alt": "Escada helicoidal branca vista de baixo, com corrimão e guarda corpo em aço inox acompanhando toda a subida"
+        "alt": "Escada helicoidal branca vista de baixo, com corrimão e guarda-corpo em aço inox acompanhando toda a subida"
       },
       {
         "src": "/images/projects/escada-helicoidal-02.jpg",
@@ -29,7 +29,7 @@
     "video": {
       "src": "/videos/projects/escada-helicoidal.mp4",
       "poster": "/images/projects/escada-helicoidal-video.jpg",
-      "label": "Vídeo do corrimão e guarda corpo em inox da escada helicoidal"
+      "label": "Vídeo do corrimão e guarda-corpo em inox da escada helicoidal"
     },
     "featured": true
   },
@@ -55,21 +55,21 @@
   },
   {
     "id": "guarda-corpo-area-piscinas",
-    "title": "Guarda corpos em inox para área de piscinas",
+    "title": "Guarda-corpos em inox para área de piscinas",
     "category": "Piscinas",
-    "description": "Guarda corpos e corrimãos em aço inox acompanhando as rampas e os contornos curvos de uma área de piscinas.",
+    "description": "Guarda-corpos e corrimãos em aço inox acompanhando as rampas e os contornos curvos de uma área de piscinas.",
     "image": {
       "src": "/images/projects/guarda-corpo-piscina-01.jpg",
-      "alt": "Guarda corpo em aço inox contornando a rampa curva de acesso a uma piscina, com palmeiras ao fundo"
+      "alt": "Guarda-corpo em aço inox contornando a rampa curva de acesso a uma piscina, com palmeiras ao fundo"
     },
     "gallery": [
       {
         "src": "/images/projects/guarda-corpo-piscina-02.jpg",
-        "alt": "Rampa de acesso à piscina com guarda corpos em aço inox dos dois lados"
+        "alt": "Rampa de acesso à piscina com guarda-corpos em aço inox dos dois lados"
       },
       {
         "src": "/images/projects/guarda-corpo-piscina-03.jpg",
-        "alt": "Guarda corpo curvo em aço inox com balaústres verticais em mirante cercado por vegetação"
+        "alt": "Guarda-corpo curvo em aço inox com balaústres verticais em mirante cercado por vegetação"
       },
       {
         "src": "/images/projects/guarda-corpo-piscina-04.jpg",
@@ -79,17 +79,17 @@
   },
   {
     "id": "escada-curva-corrimao",
-    "title": "Corrimão e guarda corpo em inox para escada curva",
+    "title": "Corrimão e guarda-corpo em inox para escada curva",
     "category": "Escadas",
     "description": "Corrimão em aço inox dos dois lados da escada curva, com montantes e longarinas que acompanham a subida dos degraus.",
     "image": {
       "src": "/images/projects/escada-curva-01.jpg",
-      "alt": "Escada curva de degraus claros com corrimão e guarda corpo em aço inox, diante de uma fachada de vidro"
+      "alt": "Escada curva de degraus claros com corrimão e guarda-corpo em aço inox, diante de uma fachada de vidro"
     },
     "gallery": [
       {
         "src": "/images/projects/escada-curva-02.jpg",
-        "alt": "Vista geral da escada curva com corrimão e guarda corpo em aço inox em sala de pé-direito duplo"
+        "alt": "Vista geral da escada curva com corrimão e guarda-corpo em aço inox em sala de pé-direito duplo"
       }
     ]
   },
@@ -123,17 +123,17 @@
   },
   {
     "id": "guarda-corpo-vidro-hall",
-    "title": "Guarda corpo em inox com vidro em hall de edifício",
-    "category": "Guarda corpos",
-    "description": "Guarda corpo em aço inox com fechamento em vidro para organizar a circulação junto às catracas e aos elevadores.",
+    "title": "Guarda-corpo em inox com vidro em hall de edifício",
+    "category": "Guarda-corpos",
+    "description": "Guarda-corpo em aço inox com fechamento em vidro para organizar a circulação junto às catracas e aos elevadores.",
     "image": {
       "src": "/images/projects/guarda-corpo-vidro-hall-01.jpg",
-      "alt": "Guarda corpo em aço inox com painéis de vidro em hall de edifício, ao lado das catracas de acesso"
+      "alt": "Guarda-corpo em aço inox com painéis de vidro em hall de edifício, ao lado das catracas de acesso"
     },
     "gallery": [
       {
         "src": "/images/projects/guarda-corpo-vidro-hall-02.jpg",
-        "alt": "Trecho do guarda corpo em aço inox e vidro fixado ao piso de mármore do hall"
+        "alt": "Trecho do guarda-corpo em aço inox e vidro fixado ao piso de mármore do hall"
       },
       {
         "src": "/images/projects/guarda-corpo-vidro-hall-03.jpg",
@@ -143,21 +143,21 @@
   },
   {
     "id": "escada-curva-residencial",
-    "title": "Guarda corpo em inox para escada curva em mármore",
+    "title": "Guarda-corpo em inox para escada curva em mármore",
     "category": "Escadas",
-    "description": "Guarda corpo em aço inox com corrimão e tubos curvados sob medida, acompanhando o raio da escada do início ao pavimento superior.",
+    "description": "Guarda-corpo em aço inox com corrimão e tubos curvados sob medida, acompanhando o raio da escada do início ao pavimento superior.",
     "image": {
       "src": "/images/projects/escada-curva-residencial-01.jpg",
-      "alt": "Escada curva em mármore com guarda corpo em aço inox de tubos curvados, diante de uma janela"
+      "alt": "Escada curva em mármore com guarda-corpo em aço inox de tubos curvados, diante de uma janela"
     },
     "gallery": [
       {
         "src": "/images/projects/escada-curva-residencial-02.jpg",
-        "alt": "Guarda corpo em aço inox subindo pela escada curva até o pavimento superior"
+        "alt": "Guarda-corpo em aço inox subindo pela escada curva até o pavimento superior"
       },
       {
         "src": "/images/projects/escada-curva-residencial-03.jpg",
-        "alt": "Vista frontal da escada curva com guarda corpo em aço inox dos dois lados"
+        "alt": "Vista frontal da escada curva com guarda-corpo em aço inox dos dois lados"
       },
       {
         "src": "/images/projects/escada-curva-residencial-04.jpg",
@@ -165,7 +165,7 @@
       },
       {
         "src": "/images/projects/escada-curva-residencial-05.jpg",
-        "alt": "Guarda corpo curvo em aço inox visto do alto da escada"
+        "alt": "Guarda-corpo curvo em aço inox visto do alto da escada"
       }
     ]
   },
@@ -181,12 +181,12 @@
   },
   {
     "id": "guarda-corpo-vidro-catracas",
-    "title": "Guarda corpo em inox com vidro para controle de acesso",
-    "category": "Guarda corpos",
-    "description": "Guarda corpos em aço inox com fechamento em vidro para direcionar o fluxo de pessoas até as catracas de uma recepção.",
+    "title": "Guarda-corpo em inox com vidro para controle de acesso",
+    "category": "Guarda-corpos",
+    "description": "Guarda-corpos em aço inox com fechamento em vidro para direcionar o fluxo de pessoas até as catracas de uma recepção.",
     "image": {
       "src": "/images/projects/guarda-corpo-vidro-catracas-01.jpg",
-      "alt": "Guarda corpo em aço inox com vidro ao lado das catracas de uma recepção com piso de granito escuro"
+      "alt": "Guarda-corpo em aço inox com vidro ao lado das catracas de uma recepção com piso de granito escuro"
     },
     "gallery": [
       {
@@ -195,11 +195,11 @@
       },
       {
         "src": "/images/projects/guarda-corpo-vidro-catracas-03.jpg",
-        "alt": "Módulo de guarda corpo em aço inox com vidro entre a catraca e a parede de madeira"
+        "alt": "Módulo de guarda-corpo em aço inox com vidro entre a catraca e a parede de madeira"
       },
       {
         "src": "/images/projects/guarda-corpo-vidro-catracas-04.jpg",
-        "alt": "Guarda corpo em aço inox com dois painéis de vidro diante das catracas"
+        "alt": "Guarda-corpo em aço inox com dois painéis de vidro diante das catracas"
       }
     ]
   },
@@ -221,21 +221,21 @@
   },
   {
     "id": "escada-curva-edificio",
-    "title": "Guarda corpo em inox para escada curva de edifício",
+    "title": "Guarda-corpo em inox para escada curva de edifício",
     "category": "Escadas",
-    "description": "Guarda corpo em aço inox com balaústres verticais e corrimão duplo, curvado para acompanhar os lances e o patamar da escada.",
+    "description": "Guarda-corpo em aço inox com balaústres verticais e corrimão duplo, curvado para acompanhar os lances e o patamar da escada.",
     "image": {
       "src": "/images/projects/escada-curva-edificio-01.jpg",
-      "alt": "Escada curva de edifício com guarda corpo em aço inox de balaústres verticais, vista de cima"
+      "alt": "Escada curva de edifício com guarda-corpo em aço inox de balaústres verticais, vista de cima"
     },
     "gallery": [
       {
         "src": "/images/projects/escada-curva-edificio-02.jpg",
-        "alt": "Patamar curvo da escada com guarda corpo em aço inox e corrimão duplo"
+        "alt": "Patamar curvo da escada com guarda-corpo em aço inox e corrimão duplo"
       },
       {
         "src": "/images/projects/escada-curva-edificio-03.jpg",
-        "alt": "Lance da escada com guarda corpo em aço inox e corrimão em duas alturas"
+        "alt": "Lance da escada com guarda-corpo em aço inox e corrimão em duas alturas"
       },
       {
         "src": "/images/projects/escada-curva-edificio-04.jpg",
@@ -245,12 +245,12 @@
   },
   {
     "id": "guarda-corpo-tubo-quadrado",
-    "title": "Guarda corpo em inox com montantes quadrados",
-    "category": "Guarda corpos",
-    "description": "Guarda corpo em aço inox polido com montantes de tubo quadrado, longarinas horizontais e corrimão superior.",
+    "title": "Guarda-corpo em inox com montantes quadrados",
+    "category": "Guarda-corpos",
+    "description": "Guarda-corpo em aço inox polido com montantes de tubo quadrado, longarinas horizontais e corrimão superior.",
     "image": {
       "src": "/images/projects/guarda-corpo-tubo-quadrado-01.jpg",
-      "alt": "Guarda corpo em aço inox polido com montantes quadrados e longarinas horizontais no topo de uma escada"
+      "alt": "Guarda-corpo em aço inox polido com montantes quadrados e longarinas horizontais no topo de uma escada"
     }
   },
   {
@@ -275,12 +275,12 @@
   },
   {
     "id": "escada-helicoidal-granito",
-    "title": "Guarda corpo em inox para escada helicoidal em granito",
+    "title": "Guarda-corpo em inox para escada helicoidal em granito",
     "category": "Escadas",
-    "description": "Guarda corpo em aço inox com tubos calandrados acompanhando o giro completo da escada helicoidal.",
+    "description": "Guarda-corpo em aço inox com tubos calandrados acompanhando o giro completo da escada helicoidal.",
     "image": {
       "src": "/images/projects/escada-helicoidal-granito-01.jpg",
-      "alt": "Escada helicoidal em granito vista de cima, com guarda corpo em aço inox de tubos curvados"
+      "alt": "Escada helicoidal em granito vista de cima, com guarda-corpo em aço inox de tubos curvados"
     },
     "gallery": [
       {
@@ -291,12 +291,12 @@
   },
   {
     "id": "guarda-corpo-escada-edificio",
-    "title": "Guarda corpo e corrimão duplo em inox para escada de edifício",
-    "category": "Guarda corpos",
-    "description": "Guarda corpo em aço inox com balaústres verticais e corrimão duplo, contínuo entre os lances e os patamares da escada.",
+    "title": "Guarda-corpo e corrimão duplo em inox para escada de edifício",
+    "category": "Guarda-corpos",
+    "description": "Guarda-corpo em aço inox com balaústres verticais e corrimão duplo, contínuo entre os lances e os patamares da escada.",
     "image": {
       "src": "/images/projects/guarda-corpo-escada-edificio-01.jpg",
-      "alt": "Escada de edifício com guarda corpo em aço inox de balaústres verticais e corrimão duplo"
+      "alt": "Escada de edifício com guarda-corpo em aço inox de balaústres verticais e corrimão duplo"
     },
     "gallery": [
       {
@@ -337,17 +337,17 @@
   },
   {
     "id": "guarda-corpo-escada-mezanino",
-    "title": "Guarda corpo em inox para escada e mezanino",
-    "category": "Guarda corpos",
-    "description": "Guarda corpo em aço inox com longarinas horizontais, contínuo da escada até o mezanino.",
+    "title": "Guarda-corpo em inox para escada e mezanino",
+    "category": "Guarda-corpos",
+    "description": "Guarda-corpo em aço inox com longarinas horizontais, contínuo da escada até o mezanino.",
     "image": {
       "src": "/images/projects/guarda-corpo-escada-mezanino-01.jpg",
-      "alt": "Guarda corpo em aço inox com longarinas horizontais no topo de uma escada de mármore"
+      "alt": "Guarda-corpo em aço inox com longarinas horizontais no topo de uma escada de mármore"
     },
     "gallery": [
       {
         "src": "/images/projects/guarda-corpo-escada-mezanino-02.jpg",
-        "alt": "Escada e mezanino com guarda corpo em aço inox, em casa em fase final de obra"
+        "alt": "Escada e mezanino com guarda-corpo em aço inox, em casa em fase final de obra"
       }
     ]
   },
@@ -373,12 +373,12 @@
   },
   {
     "id": "escada-helicoidal-marmore",
-    "title": "Guarda corpo em inox para escada helicoidal em mármore",
+    "title": "Guarda-corpo em inox para escada helicoidal em mármore",
     "category": "Escadas",
-    "description": "Guarda corpo em aço inox com tubos curvados acompanhando a escada helicoidal, fotografado durante a instalação.",
+    "description": "Guarda-corpo em aço inox com tubos curvados acompanhando a escada helicoidal, fotografado durante a instalação.",
     "image": {
       "src": "/images/projects/escada-helicoidal-marmore-01.jpg",
-      "alt": "Escada helicoidal em mármore claro com guarda corpo em aço inox, vista do pavimento superior"
+      "alt": "Escada helicoidal em mármore claro com guarda-corpo em aço inox, vista do pavimento superior"
     },
     "gallery": [
       {
@@ -409,17 +409,17 @@
   },
   {
     "id": "guarda-corpo-escada-reta",
-    "title": "Guarda corpo em inox para escada reta",
-    "category": "Guarda corpos",
-    "description": "Guarda corpo em aço inox com montantes fixados nos degraus e longarinas inclinadas ao longo da escada.",
+    "title": "Guarda-corpo em inox para escada reta",
+    "category": "Guarda-corpos",
+    "description": "Guarda-corpo em aço inox com montantes fixados nos degraus e longarinas inclinadas ao longo da escada.",
     "image": {
       "src": "/images/projects/guarda-corpo-escada-reta-01.jpg",
-      "alt": "Escada reta de granito com guarda corpo em aço inox de longarinas inclinadas"
+      "alt": "Escada reta de granito com guarda-corpo em aço inox de longarinas inclinadas"
     },
     "gallery": [
       {
         "src": "/images/projects/guarda-corpo-escada-reta-02.jpg",
-        "alt": "Vista frontal da escada reta com guarda corpo em aço inox"
+        "alt": "Vista frontal da escada reta com guarda-corpo em aço inox"
       }
     ]
   },
@@ -441,22 +441,22 @@
   },
   {
     "id": "guarda-corpo-escada-branca",
-    "title": "Guarda corpo em inox para escada interna",
-    "category": "Guarda corpos",
-    "description": "Guarda corpo em aço inox com longarinas horizontais acompanhando os dois lances da escada.",
+    "title": "Guarda-corpo em inox para escada interna",
+    "category": "Guarda-corpos",
+    "description": "Guarda-corpo em aço inox com longarinas horizontais acompanhando os dois lances da escada.",
     "image": {
       "src": "/images/projects/guarda-corpo-escada-branca-01.jpg",
-      "alt": "Escada interna branca com guarda corpo em aço inox de longarinas horizontais"
+      "alt": "Escada interna branca com guarda-corpo em aço inox de longarinas horizontais"
     }
   },
   {
     "id": "guarda-corpo-escada-patamar",
-    "title": "Guarda corpo em inox para escada com patamar",
-    "category": "Guarda corpos",
-    "description": "Guarda corpo em aço inox com balaústres verticais e corrimão contínuo na virada do patamar.",
+    "title": "Guarda-corpo em inox para escada com patamar",
+    "category": "Guarda-corpos",
+    "description": "Guarda-corpo em aço inox com balaústres verticais e corrimão contínuo na virada do patamar.",
     "image": {
       "src": "/images/projects/guarda-corpo-escada-patamar-01.jpg",
-      "alt": "Guarda corpo em aço inox com balaústres verticais na virada de uma escada com parede de azulejos"
+      "alt": "Guarda-corpo em aço inox com balaústres verticais na virada de uma escada com parede de azulejos"
     }
   }
 ]

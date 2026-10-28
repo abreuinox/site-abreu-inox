@@ -8,9 +8,17 @@ const nextConfig: NextConfig = {
     return [
       // Domínio canônico: www.abreuinox.com -> abreuinox.com
       {
-        source: "/:path*",
+        source: "/:path(.*)",
         has: [{ type: "host", value: "www.abreuinox.com" }],
-        destination: "https://abreuinox.com/:path*",
+        destination: "https://abreuinox.com/:path",
+        permanent: true,
+      },
+      // O endereço de produção da Vercel duplica o site: consolida no domínio
+      // oficial. Só o host exato; as URLs de preview continuam acessíveis.
+      {
+        source: "/:path(.*)",
+        has: [{ type: "host", value: "site-abreu-inox.vercel.app" }],
+        destination: "https://abreuinox.com/:path",
         permanent: true,
       },
     ];
@@ -18,7 +26,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/:path*",
+        source: "/:path(.*)",
         headers: [
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },

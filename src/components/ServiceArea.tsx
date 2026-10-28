@@ -29,7 +29,7 @@ export function ServiceArea() {
             Como atendemos
           </dt>
           <dd className="mt-3 font-display text-lg leading-snug font-bold">
-            Orçamento pelo WhatsApp, com avaliação de cada demanda
+            Orçamento pelo WhatsApp ou pelo formulário, com avaliação de cada demanda
           </dd>
         </div>
       </dl>

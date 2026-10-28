@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { Project, ProjectImage } from "@/data/projects";
 import { ArrowIcon, CloseIcon } from "./icons";
+import { whatsappUrl } from "@/lib/whatsapp";
 
 /** Projeto com as dimensões reais da foto principal, lidas no servidor. */
 export type GalleryProject = Project & {
@@ -13,11 +15,11 @@ export type GalleryProject = Project & {
 type Props = {
   projects: GalleryProject[];
   categories: string[];
-  quoteUrl: string;
+  /** Quantos projetos a grade mostra antes do botão "Ver todos" (padrão: 9). */
+  pageSize?: number;
 };
 
 const ALL = "Todos";
-/** Quantos projetos a grade mostra antes do botão "Ver todos". */
 const PAGE_SIZE = 9;
 
 function mediaLabel(project: Project) {
@@ -26,7 +28,7 @@ function mediaLabel(project: Project) {
   return project.video ? `${photos} e vídeo` : photos;
 }
 
-export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
+export function ProjectGallery({ projects, categories, pageSize = PAGE_SIZE }: Props) {
   const [category, setCategory] = useState(ALL);
   const [expanded, setExpanded] = useState(false);
   const [openId, setOpenId] = useState<string | null>(null);
@@ -38,7 +40,7 @@ export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
   // O destaque só aparece na visão geral; com filtro, tudo entra na grade.
   const featured = category === ALL ? projects.find((p) => p.featured) : undefined;
   const rest = visible.filter((p) => p.id !== featured?.id);
-  const grid = expanded ? rest : rest.slice(0, PAGE_SIZE);
+  const grid = expanded ? rest : rest.slice(0, pageSize);
   const open = projects.find((p) => p.id === openId) ?? null;
   const photos = open ? [open.image, ...(open.gallery ?? [])] : [];
   // O vídeo, quando existe, entra como último item da galeria.
@@ -56,6 +58,16 @@ export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
   function openProject(id: string) {
     setPhotoIndex(0);
     setOpenId(id);
+  }
+
+  /**
+   * Os cards são links para a página do projeto (rastreáveis e abríveis em
+   * nova aba); o clique simples abre a visualização rápida na mesma página.
+   */
+  function onCardClick(event: React.MouseEvent, id: string) {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return;
+    event.preventDefault();
+    openProject(id);
   }
 
   function step(delta: number) {
@@ -95,9 +107,9 @@ export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
 
       {featured ? (
         <article className="mb-4 grid overflow-hidden rounded-2xl border border-line bg-coal lg:grid-cols-[1.7fr_1fr]">
-          <button
-            type="button"
-            onClick={() => openProject(featured.id)}
+          <Link
+            href={`/projetos/${featured.id}/`}
+            onClick={(event) => onCardClick(event, featured.id)}
             aria-label={`Abrir projeto: ${featured.title}`}
             className="group relative block aspect-[4/3] overflow-hidden lg:aspect-auto lg:min-h-[30rem]"
           >
@@ -108,13 +120,15 @@ export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
               sizes="(min-width: 1024px) 700px, 100vw"
               className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
             />
-          </button>
+          </Link>
           <div className="flex flex-col p-6 sm:p-9">
             <p className="text-xs font-semibold tracking-[0.18em] text-steel-dim uppercase">
               Projeto em destaque · {featured.category}
             </p>
             <h3 className="mt-4 font-display text-2xl leading-tight font-bold sm:text-3xl">
-              {featured.title}
+              <Link href={`/projetos/${featured.id}/`} className="hover:underline">
+                {featured.title}
+              </Link>
             </h3>
             <p className="mt-4 leading-relaxed text-steel">{featured.description}</p>
             <button
@@ -132,9 +146,9 @@ export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
       <ul className="gap-4 sm:columns-2 lg:columns-3">
         {grid.map((project) => (
           <li key={project.id} className="mb-4 break-inside-avoid">
-            <button
-              type="button"
-              onClick={() => openProject(project.id)}
+            <Link
+              href={`/projetos/${project.id}/`}
+              onClick={(event) => onCardClick(event, project.id)}
               className="group relative block w-full overflow-hidden rounded-2xl border border-line bg-coal text-left"
             >
               <Image
@@ -156,7 +170,7 @@ export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
                   <span className="mt-1 block text-sm text-steel">{mediaLabel(project)}</span>
                 ) : null}
               </span>
-            </button>
+            </Link>
           </li>
         ))}
       </ul>
@@ -256,14 +270,24 @@ export function ProjectGallery({ projects, categories, quoteUrl }: Props) {
                 <p className="mt-2 text-sm text-steel-dim">{open.location}</p>
               ) : null}
               <p className="mt-4 leading-relaxed text-steel">{open.description}</p>
-              <a
-                href={quoteUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="surface-steel mt-8 inline-flex items-center justify-center rounded-full px-6 py-3.5 text-sm font-semibold lg:mt-auto"
-              >
-                Quero um projeto como este
-              </a>
+              <div className="mt-8 flex flex-col gap-3 lg:mt-auto">
+                <a
+                  href={whatsappUrl("project")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-cta="galeria"
+                  className="surface-steel inline-flex items-center justify-center rounded-full px-6 py-3.5 text-sm font-semibold"
+                >
+                  Quero um projeto como este
+                </a>
+                <Link
+                  href={`/projetos/${open.id}/`}
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-3.5 text-sm font-semibold hover:border-white/60"
+                >
+                  Ver página do projeto
+                  <ArrowIcon className="size-4" />
+                </Link>
+              </div>
             </div>
           </div>
         ) : null}

@@ -8,6 +8,8 @@ type Props = {
   variant?: "primary" | "outline";
   size?: "md" | "lg";
   className?: string;
+  /** Onde o botão está na página, para a medição de cliques (data-cta). */
+  cta?: string;
 };
 
 const variants = {
@@ -21,6 +23,8 @@ const sizes = {
   lg: "px-7 py-4 text-base",
 };
 
+export const buttonStyles = { variants, sizes };
+
 /** Botão de orçamento: sempre abre o WhatsApp comercial com a mensagem do perfil. */
 export function WhatsAppButton({
   children,
@@ -28,12 +32,14 @@ export function WhatsAppButton({
   variant = "primary",
   size = "lg",
   className = "",
+  cta,
 }: Props) {
   return (
     <a
       href={whatsappUrl(audience)}
       target="_blank"
       rel="noopener noreferrer"
+      data-cta={cta}
       className={`inline-flex items-center justify-center gap-2.5 rounded-full text-center font-semibold transition-colors ${variants[variant]} ${sizes[size]} ${className}`}
     >
       <WhatsAppIcon className="size-5 shrink-0" />

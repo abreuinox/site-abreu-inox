@@ -128,7 +128,20 @@ Resultados em produção: ver `CHECKLIST-PUBLICACAO.md` e a seção abaixo, atua
 
 ## Validação em produção
 
-_(preenchido após o deploy)_
+Deploy `c76fc2d` publicado na Vercel em 27/10/2026 (push para `main`).
+
+| Teste em https://abreuinox.com | Resultado |
+| --- | --- |
+| `npm run check:seo -- https://abreuinox.com` | OK: 40 URLs, 107 links/imagens internos, 0 erros |
+| Texto "30 anos de experiência" na home | Presente ("15 anos" não aparece mais) |
+| `https://www.abreuinox.com/sobre/` | 308 → `https://abreuinox.com/sobre/` (1 salto) |
+| `http://abreuinox.com/projetos/` | 308 → `https://abreuinox.com/projetos/` (1 salto) |
+| `http://www.abreuinox.com/` | 2 saltos (HTTPS da Vercel → apex), sem ciclo |
+| `https://site-abreu-inox.vercel.app/solucoes/` | 308 → `https://abreuinox.com/solucoes/` (1 salto) |
+| `/llms.txt` | 200 |
+
+Publicado **não** significa indexado: o próximo passo é verificar o Search
+Console e enviar o sitemap.
 
 ## Pendências e próximos passos
 
